@@ -88,9 +88,9 @@ body.toggled > #icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90vw;
+    width: 91vw;
     height: 92vh;
-        margin: 5vh 5vw 3vh 5vw;
+        margin: 5vh 4vw 3vh 5vw;
     /*background: linear-gradient(*/
     /*        to bottom right,*/
     /*        rgba(0, 0, 0, 0)60%,*/
@@ -159,4 +159,34 @@ body.night *
 {
     color: white;
     transition: color ease 1s;
+}
+
+#scrollbar::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border-right: solid 5px transparent;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+}
+
+#scrollbar::-webkit-scrollbar
+{
+    width: 15px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb
+{
+    /*-webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.623);*/
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.62);
+
+    border-radius: 10px;
+    border-right: solid 5px transparent;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+}
+
+#test
+{
+    height: 200vh;
 }
