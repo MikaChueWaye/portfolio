@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <script defer type="text/javascript" src="../js/hackEffect.js"></script>
-    <script defer type="module" src="../js/background.js"></script>
-    <script defer type="module" src="../js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="text/javascript" src="js/hackEffect.js"></script>
+    <script defer type="module" src="js/background.js"></script>
+    <script defer type="module" src="js/index.js"></script>
 
     <title><?php echo $pagetitle; ?></title>
 </head>
