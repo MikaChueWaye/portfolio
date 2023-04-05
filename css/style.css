@@ -5,10 +5,11 @@
 }
 
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 @keyframes background-pan {
@@ -22,6 +23,7 @@
 }
 
 body {
+
     animation: background-pan 20s linear infinite;
     background-color: var(--g1);
     background-image: linear-gradient(
@@ -108,7 +110,6 @@ body.toggled > #icon {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
-
 }
 
 .nav-links ul
@@ -135,6 +136,7 @@ body.toggled > #icon {
 .nav-links a
 {
     padding: 5px 10px 5px 10px;
+    font-weight: 500;
 }
 
 .content
