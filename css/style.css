@@ -4,6 +4,13 @@
     --card-color: rgb(23, 23, 23);
 }
 
+* {
+    margin : 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 @keyframes background-pan {
     from {
         background-position: 0% center;
@@ -89,18 +96,18 @@ body.toggled > #icon {
     /*        rgba(0, 0, 0, 0)60%,*/
     /*        rgba(0, 0, 0, 0.7));*/
     /*background: rgba(0, 0, 0, 0.16);*/
-    overflow-y: scroll;
     border-radius: 10px;
     z-index: 1000;
     /*pointer-events: none;*/
     /*transition: background-color 1s ease;*/
 }
 
-/*.content*/
-/*{*/
-/*    height: 200vh;*/
-/*    !*pointer-events: none;*!*/
-/*}*/
+.content
+{
+    width: 100%;
+
+    overflow-y: scroll;
+}
 
 body.night .content-background
 {
