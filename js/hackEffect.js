@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", loadPage);
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let word;
@@ -34,7 +36,10 @@ elements.forEach(event => event.addEventListener('mouseover', () => {
 );
 
 let elements2 = document.querySelectorAll('.FastHacked');
-elements2.forEach(event => event.addEventListener('mouseover', () => {
+
+function loadPage()
+{
+    elements2.forEach(event => {
         let interval = null;
 
         let iteration = 0;
@@ -62,4 +67,4 @@ elements2.forEach(event => event.addEventListener('mouseover', () => {
             iteration += 1 / 3;
         }, 10);
     })
-)
+}

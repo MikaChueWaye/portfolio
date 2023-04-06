@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer type="text/javascript" src="../js/hackEffect.js"></script>
+    <script defer type="module" src="../js/background.js"></script>
+    <script defer type="module" src="../js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Mika CHUE WAYE | Projets</title>
+</head>
+<body>
+
+<div id="tiles"></div>
+
+<div class="content-background">
+
+    <div class="content" id="scrollbar">
+
+
+    </div>
+
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a data-value ="QUI SUIS-JE?" class="hacked" href="../index.html">QUI SUIS-JE?</a>
+                </li>
+                <li>
+                    <a data-value ="MES PROJETS" class="hacked" href="projets.html">MES PROJETS</a>
+                </li>
+                <li>
+                    <a data-value ="CONTACT" class="hacked" href="contact.html">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+</body>
+</html>

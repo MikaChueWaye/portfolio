@@ -10,6 +10,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
+    color: black;
 }
 
 @keyframes background-pan {
@@ -135,8 +136,11 @@ body.toggled > #icon {
 
 .nav-links a
 {
+
+    text-align: center;
     padding: 5px 10px 5px 10px;
     font-weight: 500;
+    width: 100%;
 }
 
 .content
