@@ -86,23 +86,56 @@ body.toggled > #icon {
     position: absolute;
 }
 
+.uiBackground
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97vw;
+    height: calc(100vh - 3vw);
+    margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
+    border: solid 1px #b4b4b4;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 900;
+}
+.uiBackground2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94vw;
+    height: calc(100vh - 3vw);
+    margin: 1.5vw 1.5vw 1.5vw 4vw ;
+    border-left: solid 1px #b4b4b4;
+    /*border-right: solid 1px #b4b4b4;*/
+    pointer-events: none;
+    z-index: 900;
+}
+.uiBackground3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97vw;
+    height: calc(100vh - 3vw - 50px);
+    margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
+    border-bottom: solid 1px #b4b4b4;
+    pointer-events: none;
+    z-index: 900;
+}
+
 .content-background
 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 91vw;
-    height: 92vh;
-        margin: 5vh 4vw 3vh 5vw;
-    /*background: linear-gradient(*/
-    /*        to bottom right,*/
-    /*        rgba(0, 0, 0, 0)60%,*/
-    /*        rgba(0, 0, 0, 0.7));*/
-    /*background: rgba(0, 0, 0, 0.16);*/
-    border-radius: 10px;
+    width: 90vw;
+    /*height: 92vh;*/
+    /*margin: 4vh 4vw 3vh 6vw;*/
+    height: calc(100vh - 1.5vw - 3vh);
+    margin: 1.5vw 4vw 3vh 6vw;
     z-index: 1000;
-    /*pointer-events: none;*/
-    /*transition: background-color 1s ease;*/
 }
 
 .nav-bar
@@ -111,6 +144,14 @@ body.toggled > #icon {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+}
+
+.nav-links
+{
+    /*border-top: solid 1px #b4b4b4;*/
+    /*border-bottom: solid 1px #b4b4b4;*/
+
+    /*border-radius: 5px;*/
 }
 
 .nav-links ul
@@ -127,16 +168,15 @@ body.toggled > #icon {
     padding: 10px 10px 10px 10px;
 }
 
-.nav-links li:hover
-{
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
-    border-radius: 10px 10px 10px 0;
-}
+/*.nav-links li:hover*/
+/*{*/
+/*    background-color: rgba(0, 0, 0, 0.1);*/
+/*    transition: all 0.5s ease;*/
+/*    border-radius: 10px 10px 10px 0;*/
+/*}*/
 
 .nav-links a
 {
-
     text-align: center;
     padding: 5px 10px 5px 10px;
     font-weight: 500;
@@ -145,6 +185,7 @@ body.toggled > #icon {
 
 .content
 {
+    margin-top: 20px;
     width: 100%;
     height: 92%;
     overflow-y: scroll;
@@ -192,6 +233,47 @@ body.night *
     border-bottom: solid 5px transparent;
 }
 
-#test
+.active
 {
+    text-decoration-line: underline;
+}
+
+.hackHover::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.hackHover:hover::before {
+    transform: scaleX(1) skew(-20deg);
+    transform-origin: bottom left;
+}
+
+.hackHover::before {
+    /*transform: skew(20deg);*/
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(0, 0%, 0%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.night .hackHover::before
+{
+    background: hsl(0, 0%, 100%);
+}
+
+.hackHover {
+    position: relative;
+}
+
+.hackHover:hover
+{
+    color: #ffffff;
+}
+.night .hackHover:hover
+{
+    color: black;
 }
