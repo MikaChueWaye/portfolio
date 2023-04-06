@@ -12,6 +12,11 @@ elements.forEach(event => event.addEventListener('mouseover', () => {
 
         clearInterval(interval);
 
+        if (event.dataset.value === undefined)
+        {
+            event.dataset.value = event.innerHTML;
+        }
+
         interval = setInterval(()=> {
             event.innerHTML = event.innerHTML
                 .split("")
@@ -35,7 +40,7 @@ elements.forEach(event => event.addEventListener('mouseover', () => {
     })
 );
 
-let elements2 = document.querySelectorAll('.FastHacked');
+let elements2 = document.querySelectorAll('.fastHacked');
 
 function loadPage()
 {
@@ -45,6 +50,11 @@ function loadPage()
         let iteration = 0;
 
         clearInterval(interval);
+
+        if (event.dataset.value === undefined)
+        {
+            event.dataset.value = event.innerHTML;
+        }
 
         interval = setInterval(()=> {
             event.innerHTML = event.innerHTML

@@ -94,10 +94,15 @@ body.toggled > #icon {
     width: 97vw;
     height: calc(100vh - 3vw);
     margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
-    border: solid 1px #b4b4b4;
+    /*border: solid 1px #b4b4b4;*/
+    border: solid 1px black;
     border-radius: 5px;
     pointer-events: none;
     z-index: 900;
+}
+.night .uiBackground
+{
+    border-color: white;
 }
 .uiBackground2
 {
@@ -107,10 +112,15 @@ body.toggled > #icon {
     width: 94vw;
     height: calc(100vh - 3vw);
     margin: 1.5vw 1.5vw 1.5vw 4vw ;
-    border-left: solid 1px #b4b4b4;
+    /*border-left: solid 1px #b4b4b4;*/
+    border-left: solid 1px black;
     /*border-right: solid 1px #b4b4b4;*/
     pointer-events: none;
     z-index: 900;
+}
+.night .uiBackground2
+{
+    border-color: white;
 }
 .uiBackground3
 {
@@ -120,9 +130,14 @@ body.toggled > #icon {
     width: 97vw;
     height: calc(100vh - 3vw - 50px);
     margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
-    border-bottom: solid 1px #b4b4b4;
+    /*border-bottom: solid 1px #b4b4b4;*/
+    border-bottom: solid 1px black;
     pointer-events: none;
     z-index: 900;
+}
+.night .uiBackground3
+{
+    border-color: white;
 }
 
 .content-background
@@ -162,7 +177,7 @@ body.toggled > #icon {
 
 .nav-links li
 {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     padding: 10px 10px 10px 10px;
