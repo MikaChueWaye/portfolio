@@ -56,6 +56,19 @@ body.toggled > #icon {
     opacity: 1;
 }
 
+.background-image
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/pxfuel.jpg") no-repeat center fixed;
+    filter: opacity(20%);
+    z-index: 899;
+    pointer-events: none;
+}
+
 .centered {
     left: 50%;
     position: absolute;
