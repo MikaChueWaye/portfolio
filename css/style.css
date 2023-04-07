@@ -91,9 +91,9 @@ body.toggled > #icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 97vw;
-    height: calc(100vh - 3vw);
-    margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+    margin: 25px 25px 25px 25px ;
     /*border: solid 1px #b4b4b4;*/
     border: solid 1px black;
     border-radius: 5px;
@@ -109,9 +109,9 @@ body.toggled > #icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 94vw;
-    height: calc(100vh - 3vw);
-    margin: 1.5vw 1.5vw 1.5vw 4vw ;
+    width: calc(100vw - 90px);
+    height: calc(100vh - 50px);
+    margin: 25px 25px 25px 65px ;
     /*border-left: solid 1px #b4b4b4;*/
     border-left: solid 1px black;
     /*border-right: solid 1px #b4b4b4;*/
@@ -127,9 +127,9 @@ body.toggled > #icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 97vw;
-    height: calc(100vh - 3vw - 50px);
-    margin: 1.5vw 1.5vw 1.5vw 1.5vw ;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 100px);
+    margin: 25px 25px 25px 25px ;
     /*border-bottom: solid 1px #b4b4b4;*/
     border-bottom: solid 1px black;
     pointer-events: none;
@@ -145,12 +145,19 @@ body.toggled > #icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90vw;
-    /*height: 92vh;*/
-    /*margin: 4vh 4vw 3vh 6vw;*/
-    height: calc(100vh - 1.5vw - 3vh);
-    margin: 1.5vw 4vw 3vh 6vw;
+    width: calc(100vw - 90px);
+    height: calc(100vh - 50px);
+    margin: 25px 25px 25px 65px ;
     z-index: 1000;
+}
+
+.content
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: scroll;
 }
 
 .nav-bar
@@ -198,19 +205,6 @@ body.toggled > #icon {
     width: 100%;
 }
 
-.content
-{
-    margin-top: 20px;
-    width: 100%;
-    height: 92%;
-    overflow-y: scroll;
-}
-
-body.night .content-background
-{
-    /*background-color: rgba(255, 255, 255, 0.06);*/
-    /*transition: background-color 1s ease;*/
-}
 
 body *
 {
