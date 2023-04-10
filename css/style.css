@@ -43,7 +43,7 @@ body {
 
 body.toggled {
     animation: none;
-    background-color: #000000;
+    background-color: black;
     background-image: none;
     transition: background-color 1.2s;
 }
@@ -67,6 +67,11 @@ body.toggled > #icon {
     filter: opacity(20%);
     z-index: 899;
     pointer-events: none;
+}
+
+.night .background-image
+{
+    filter: opacity(10%);
 }
 
 .centered {
@@ -299,3 +304,4 @@ body.night *
 {
     color: black;
 }
+
