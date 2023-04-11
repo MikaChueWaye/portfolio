@@ -380,6 +380,16 @@ body.night *
     height: 50px;
 }
 
+.returnButton
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: calc(100vh - 40px);
+    width: 40px;
+    z-index: 998;
+}
+
 /*----------*/
 
 /*Projets CSS*/
