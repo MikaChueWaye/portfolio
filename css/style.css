@@ -385,9 +385,17 @@ body.night *
     position: absolute;
     top: 25px;
     left: 25px;
-    height: calc(100vh - 100px);
-    width: 40px;
+    height: calc(100vh - 101px);
+    width: 39px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
     z-index: 998;
+    border: solid 1px;
+}
+
+.returnButton:hover
+{
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 /*----------*/
