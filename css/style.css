@@ -7,10 +7,25 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
     color: black;
+}
+
+p
+{
+    font-size: large;
+}
+
+li
+{
+    font-size: large;
+    list-style: square;
+}
+
+ul
+{
+    margin-left: 40px;
 }
 
 @keyframes background-pan {
@@ -173,9 +188,20 @@ body.toggled > #icon {
 {
     padding-top: 20px;
     padding-left: 20px;
-    width: 100%;
+    width: calc(100% - 20px);
     height: calc(100% - 70px);
     overflow-y: scroll;
+}
+
+.content h2, h3, h4, h5, h6
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content h1
+{
+    margin-bottom: 20px;
 }
 
 .nav-bar
@@ -305,3 +331,33 @@ body.night *
     color: black;
 }
 
+.underline
+{
+    margin-bottom:15px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #b4b4b4;
+}
+
+.details
+{
+    margin-left: 15px;
+}
+
+/*Projets CSS*/
+.projects ul
+{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.projects li
+{
+    padding: 20px 0 20px 0;
+}
+
+.projects a
+{
+    padding: 0 15px 0 15px;
+}
+
+/*-----------*/
