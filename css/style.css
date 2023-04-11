@@ -391,11 +391,13 @@ body.night *
     border-top-left-radius: 5px;
     z-index: 998;
     border: solid 1px;
+    transition: background-color 0.5s ease;
 }
 
 .returnButton:hover
 {
     background-color: rgba(0, 0, 0, 0.45);
+    transition: background-color 0.5s ease;
 }
 
 /*----------*/
