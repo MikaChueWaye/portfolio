@@ -385,7 +385,7 @@ body.night *
     position: absolute;
     top: 25px;
     left: 25px;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 100px);
     width: 40px;
     z-index: 998;
 }
