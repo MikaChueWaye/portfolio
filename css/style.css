@@ -78,7 +78,7 @@ body.toggled > #icon {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url("../img/pxfuel.jpg") no-repeat center fixed;
+    background: url("../img/background/pxfuel.jpg") no-repeat center fixed;
     filter: opacity(20%);
     z-index: 899;
     pointer-events: none;
@@ -343,6 +343,16 @@ body.night *
     margin-left: 15px;
 }
 
+.gallery
+{
+    margin-left: 15px;
+}
+
+.gallery img
+{
+    max-width: 70%;
+}
+
 /*Index CSS*/
 
 .icons
@@ -392,6 +402,9 @@ body.night *
     z-index: 998;
     border: solid 1px;
     transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .returnButton:hover
