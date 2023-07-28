@@ -436,7 +436,7 @@ body.night *
 
 /*Contact CSS*/
 
-.link:hover
+.link:hover > a
 {
     color: deepskyblue;
     transition: none;
