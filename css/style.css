@@ -439,7 +439,7 @@ body.night *
 .link:hover > a
 {
     color: deepskyblue;
-    transition: none;
+    transition: 0.2s ease;
 }
 
 /*--------------*/
