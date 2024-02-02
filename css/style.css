@@ -368,7 +368,7 @@ body.night *
     padding: 0 10px 0 10px;
     width: 50px;
     height: 50px;
-    transition: filter 1s ease;
+    transition: filter 0.5s ease;
 }
 
 .night .icons img
@@ -379,9 +379,10 @@ body.night *
 
 .icons img:hover
 {
-    width: 55px;
-    height: 55px;
+    /*width: 55px;*/
+    /*height: 55px;*/
     cursor: pointer;
+    filter: invert(50%) sepia(93%) saturate(1681%) hue-rotate(162deg) brightness(105%) contrast(105%);
 }
 
 .icons img:active
