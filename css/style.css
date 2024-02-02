@@ -368,7 +368,7 @@ body.night *
     padding: 0 10px 0 10px;
     width: 50px;
     height: 50px;
-    transition: filter 0.5s ease;
+    /*transition: filter 0.2s ease;*/
 }
 
 .night .icons img
